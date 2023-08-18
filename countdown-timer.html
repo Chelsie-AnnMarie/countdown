@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+	<script type="text/javascript" src="settings.json"></script>
+</head>
+<body>
+
+<div class="timer"> 
+  <div class="txt"><p></p></div>
+   <div class="timer--clock">
+      <div class="minutes-group clock-display-grp">
+         <div class="first number-grp">
+            <div class="number-grp-wrp">
+               <div class="num num-0"><p>0</p></div>
+               <div class="num num-1"><p>1</p></div>
+               <div class="num num-2"><p>2</p></div>
+               <div class="num num-3"><p>3</p></div>
+               <div class="num num-4"><p>4</p></div>
+               <div class="num num-5"><p>5</p></div>
+               <div class="num num-6"><p>6</p></div>
+               <div class="num num-7"><p>7</p></div>
+               <div class="num num-8"><p>8</p></div>
+               <div class="num num-9"><p>9</p></div>
+            </div>
+         </div>
+         <div class="second number-grp">
+            <div class="number-grp-wrp">
+               <div class="num num-0"><p>0</p></div>
+               <div class="num num-1"><p>1</p></div>
+               <div class="num num-2"><p>2</p></div>
+               <div class="num num-3"><p>3</p></div>
+               <div class="num num-4"><p>4</p></div>
+               <div class="num num-5"><p>5</p></div>
+               <div class="num num-6"><p>6</p></div>
+               <div class="num num-7"><p>7</p></div>
+               <div class="num num-8"><p>8</p></div>
+               <div class="num num-9"><p>9</p></div>
+            </div>
+         </div>
+      </div>
+      <div class="clock-separator"><p>:</p></div>
+      <div class="seconds-group clock-display-grp">
+         <div class="first number-grp">
+            <div class="number-grp-wrp">
+               <div class="num num-0"><p>0</p></div>
+               <div class="num num-1"><p>1</p></div>
+               <div class="num num-2"><p>2</p></div>
+               <div class="num num-3"><p>3</p></div>
+               <div class="num num-4"><p>4</p></div>
+               <div class="num num-5"><p>5</p></div>
+               <div class="num num-6"><p>6</p></div>
+               <div class="num num-7"><p>7</p></div>
+               <div class="num num-8"><p>8</p></div>
+               <div class="num num-9"><p>9</p></div>
+            </div>
+         </div>
+         <div class="second number-grp">
+            <div class="number-grp-wrp">
+               <div class="num num-0"><p>0</p></div>
+               <div class="num num-1"><p>1</p></div>
+               <div class="num num-2"><p>2</p></div>
+               <div class="num num-3"><p>3</p></div>
+               <div class="num num-4"><p>4</p></div>
+               <div class="num num-5"><p>5</p></div>
+               <div class="num num-6"><p>6</p></div>
+               <div class="num num-7"><p>7</p></div>
+               <div class="num num-8"><p>8</p></div>
+               <div class="num num-9"><p>9</p></div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+<div class="timer-back">
+   <div class="timer--clock">
+      <div class="minutes-group clock-display-grp">
+         <div class="first number-grp">
+            <div class="number-grp-wrp">
+               <div class="num num-0"><p>0</p></div>
+               <div class="num num-1"><p>1</p></div>
+               <div class="num num-2"><p>2</p></div>
+               <div class="num num-3"><p>3</p></div>
+               <div class="num num-4"><p>4</p></div>
+               <div class="num num-5"><p>5</p></div>
+               <div class="num num-6"><p>6</p></div>
+               <div class="num num-7"><p>7</p></div>
+               <div class="num num-8"><p>8</p></div>
+               <div class="num num-9"><p>9</p></div>
+            </div>
+         </div>
+         <div class="second number-grp">
+            <div class="number-grp-wrp">
+               <div class="num num-0"><p>0</p></div>
+               <div class="num num-1"><p>1</p></div>
+               <div class="num num-2"><p>2</p></div>
+               <div class="num num-3"><p>3</p></div>
+               <div class="num num-4"><p>4</p></div>
+               <div class="num num-5"><p>5</p></div>
+               <div class="num num-6"><p>6</p></div>
+               <div class="num num-7"><p>7</p></div>
+               <div class="num num-8"><p>8</p></div>
+               <div class="num num-9"><p>9</p></div>
+            </div>
+         </div>
+      </div>
+      <div class="clock-separator"><p>:</p></div>
+      <div class="seconds-group clock-display-grp">
+         <div class="first number-grp">
+            <div class="number-grp-wrp">
+               <div class="num num-0"><p>0</p></div>
+               <div class="num num-1"><p>1</p></div>
+               <div class="num num-2"><p>2</p></div>
+               <div class="num num-3"><p>3</p></div>
+               <div class="num num-4"><p>4</p></div>
+               <div class="num num-5"><p>5</p></div>
+               <div class="num num-6"><p>6</p></div>
+               <div class="num num-7"><p>7</p></div>
+               <div class="num num-8"><p>8</p></div>
+               <div class="num num-9"><p>9</p></div>
+            </div>
+         </div>
+         <div class="second number-grp">
+            <div class="number-grp-wrp">
+               <div class="num num-0"><p>0</p></div>
+               <div class="num num-1"><p>1</p></div>
+               <div class="num num-2"><p>2</p></div>
+               <div class="num num-3"><p>3</p></div>
+               <div class="num num-4"><p>4</p></div>
+               <div class="num num-5"><p>5</p></div>
+               <div class="num num-6"><p>6</p></div>
+               <div class="num num-7"><p>7</p></div>
+               <div class="num num-8"><p>8</p></div>
+               <div class="num num-9"><p>9</p></div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+<style type="text/css">
+	  @import url("https://use.typekit.net/dun5pvr.css");
+ 
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "p22-underground", sans-serif;
+  font-style: normal;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  overflow:hidden;
+}
+
+/*=================
+* TIMER
+*=================*/
+.timer, .timer-back {
+  height: 248px;
+  display: block;
+  color: white;
+}
+.timer-back {
+  z-index:-1;
+  position:relative;
+  top:-80px;
+  opacity:0.10;
+  filter:saturate(0.5) contrast(1.8);
+  transform:scale(2.5);
+}
+.timer * {
+  cursor: default;
+}
+.timer--clock {
+  width: 100%;
+  position: relative;
+  padding-left: 6px;
+  margin-top: 22px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timer--clock .clock-display-grp {
+  position: relative;
+}
+.timer--clock .clock-display-grp .number-grp {
+  width: auto;
+  display: block;
+  height: 156px;
+  float: left;
+  overflow: hidden;
+}
+.timer--clock .clock-display-grp .number-grp .number-grp-wrp {
+  width: 100%;
+  position: relative;
+}
+.timer--clock .clock-display-grp .number-grp .number-grp-wrp .num {
+  width: 100%;
+  position: relative;
+  height: 156px;
+}
+.timer--clock .clock-display-grp .number-grp .number-grp-wrp .num p {
+  width: auto;
+  display: table;
+  font-size: 200px;
+  line-height: 160px;
+  font-weight: 900;
+  padding: 15px 0px;
+  background: linear-gradient(160deg, #b517fd, #4208a5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.timer--clock .clock-separator {
+  width: auto;
+  float: left;
+  display: block;
+  height: 156px;
+  
+  background: linear-gradient(160deg, #b517fd, #4208a5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.timer--clock .clock-separator p {
+  width: auto;
+  display: table;
+  font-size: 205px;
+  line-height: 150px;
+  font-weight: bold;
+}
+
+.txt p{
+  text-align: center;
+  font-size: 100px;
+  line-height: 120px;
+  font-weight: 900;
+  margin:20px 0px;
+  position:relative;
+  top:20px;
+  opacity:0;
+  background: linear-gradient(#b517fd, #4208a5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+</style>
+
+<script type="text/javascript">
+var countdownTime = jsonObject.countdownTime,
+	finishText = jsonObject.finishText,
+	cycleText = jsonObject.cycleText,
+	cycleTime = jsonObject.cycleTime;
+	
+initTimer(countdownTime); // other ways --> "0:15" "03:5" "5:2"
+textInterval = setInterval(msgInterval, cycleTime); //interval of message
+
+ $(".txt p").text(finishText);
+
+
+
+
+TweenLite.defaultEase = Expo.easeOut;
+var timerEl = document.querySelector('.timer');
+var timerEl2 = document.querySelector('.timer-back');
+function initTimer (t) {
+   
+   var self = this,
+       timerEl = document.querySelector('.timer'),
+      timerEl2 = document.querySelector('.timer-back');
+       minutesGroupEl = timerEl.querySelector('.minutes-group'),
+       secondsGroupEl = timerEl.querySelector('.seconds-group'),
+       minutesGroupEl2 = timerEl2.querySelector('.minutes-group'),
+       secondsGroupEl2 = timerEl2.querySelector('.seconds-group'),
+
+       minutesGroup = {
+          firstNum: minutesGroupEl.querySelector('.first'),
+          secondNum: minutesGroupEl.querySelector('.second')
+       },
+        minutesGroup2 = {
+          firstNum: minutesGroupEl2.querySelector('.first'),
+          secondNum: minutesGroupEl2.querySelector('.second')
+       },
+
+       secondsGroup = {
+          firstNum: secondsGroupEl.querySelector('.first'),
+          secondNum: secondsGroupEl.querySelector('.second')
+       },
+        secondsGroup2 = {
+          firstNum: secondsGroupEl2.querySelector('.first'),
+          secondNum: secondsGroupEl2.querySelector('.second')
+       };
+
+   var time = {
+      min: t.split(':')[0],
+      sec: t.split(':')[1]
+   };
+
+   var timeNumbers;
+   function updateTimer() {
+
+      var timestr;
+      var date = new Date();
+
+      date.setHours(0);
+      date.setMinutes(time.min);
+      date.setSeconds(time.sec);
+
+      var newDate = new Date(date.valueOf() - 1000);
+      var temp = newDate.toTimeString().split(" ");
+      var tempsplit = temp[0].split(':');
+
+      time.min = tempsplit[1];
+      time.sec = tempsplit[2];
+
+      timestr = time.min + time.sec;
+      timeNumbers = timestr.split('');
+      updateTimerDisplay(timeNumbers);
+      if(timestr == '0010'){
+      clearInterval(textInterval);
+      console.log('cleared');
+      }
+
+      if(timestr === '0000')
+         countdownFinished();
+
+      if(timestr != '0000')
+         setTimeout(updateTimer, 1000);
+
+   }
+
+   function updateTimerDisplay(arr) {
+
+      animateNum(minutesGroup.firstNum, arr[0]);
+      animateNum(minutesGroup.secondNum, arr[1]);
+      animateNum(secondsGroup.firstNum, arr[2]);
+      animateNum(secondsGroup.secondNum, arr[3]);
+     animateNum(minutesGroup2.firstNum, arr[0]);
+      animateNum(minutesGroup2.secondNum, arr[1]);
+      animateNum(secondsGroup2.firstNum, arr[2]);
+      animateNum(secondsGroup2.secondNum, arr[3]);
+
+   }
+
+   function animateNum (group, arrayValue) {
+
+      TweenMax.killTweensOf(group.querySelector('.number-grp-wrp'));
+      TweenMax.to(group.querySelector('.number-grp-wrp'), 1, {
+         y: - group.querySelector('.num-' + arrayValue).offsetTop
+      });
+
+   }
+   
+   setTimeout(updateTimer, 1000);
+
+}
+
+function countdownFinished() {
+  clearInterval(textInterval);
+  $(".txt p").text(finishText);
+  setTimeout(function(){
+    TweenMax.to(".timer .timer--clock", 1, {top:"60px", opacity:"0", ease:Power2.easeInOut});
+    TweenMax.to(".txt p", 1, {top:"120px", opacity:"1", ease:Power2.easeInOut}, "-=0.3");
+  }, 1000);
+} 
+
+function msgInterval() {
+  $(".txt p").text(cycleText);
+  TweenMax.to(".timer .timer--clock", 0.8, {delay: 0.2, top:"80px", opacity:"0", ease:Power2.easeInOut});
+  TweenMax.to(".txt p", 0.8, {delay: 0.5, top:"120px", opacity:"1", ease:Power2.easeInOut}, "-=0.2");
+  TweenMax.to(".timer .timer--clock", 0.8, {delay: 2.5, top:"0px", opacity:"1", ease:Power2.easeInOut});
+  TweenMax.to(".txt p", 0.8, {delay: 2.2, top:"20px", opacity:"0", ease:Power2.easeInOut}, "-=1.0");
+  
+ 
+} 
+
+</script>
+
+</body>
+</html>

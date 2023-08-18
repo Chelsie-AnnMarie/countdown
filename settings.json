@@ -1,0 +1,6 @@
+var jsonObject = {
+    "countdownTime": "05:00", //"5:00" "03:5" "5:2"
+    "finishText": "Almost there!", //Text to display when complete
+    "cycleText": "Keep Calm, Wer're Starting Soon!", //Text to display on a cycle/interval
+    "cycleTime": "20000", //Time in miliseconds for cycled/interval text
+}
